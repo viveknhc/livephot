@@ -8,7 +8,7 @@ from .models import *
 
 def index(request):
     print(request.POST)
-    # if request.method == 'POST':
-    #     image = request.POST['imgurl']
-    #     print(image)
+    if request.method == 'POST':
+        image = request.POST['imgurl']
+        
     return render(request,"index.html")
